@@ -1,0 +1,124 @@
+body {
+    max-width: 1100px;
+    margin: 0 auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #ffebcd;
+  }
+  body .loading__hiding .preloader {
+    transition: 0.3s opacity;
+    opacity: 0;
+  }
+  body .loaded .preloader {
+    display: none;
+  }
+  body .preloader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    background: #e0e0e0;
+    z-index: 1001;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  body .table__responsive {
+    width: 97%;
+    height: 100%;
+    margin: auto;
+    margin-top: 30vh;
+  }
+  body .table__responsive table {
+    width: 100%;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+  }
+  .preloader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    background: #fff;
+    z-index: 1001;
+    opacity: 1;
+    animation: loader 4s ease;
+  }
+  .loaded{
+    /* transition: 2s ease-in all; */
+  }
+  .loaded__hiding .preloader {
+    opacity: 0;
+  }
+  .loaded .preloader {
+    display: none;
+  
+  }
+  body .table__responsive table .tbody {
+    text-align: center;
+  }
+  body .table__responsive table .tbody tr {
+    transition: ease-in 0.5s all;
+  }
+  body .table__responsive table .tbody tr:nth-child(even) {
+    background-color: #f5f5f5;
+  }
+  body .table__responsive table th, body .table__responsive table td {
+    text-align: center;
+    padding: 10px;
+  }
+  body .table__responsive table td {
+    border-radius: 10px;
+  }
+  body .table__responsive table td:hover {
+    background-color: #ccc;
+  }
+  body .table__responsive table th {
+    background-color: #1e88e5;
+    color: #fff;
+  }
+  body .table__responsive table th:nth-child(odd) {
+    background-color: #2196f3;
+  }
+  body .border {
+    width: 96.6%;
+    margin: 0 auto;
+    margin-top: 33px;
+    border: 2px solid #000;
+    border-radius: 10px;
+  }
+  
+  @media (max-width: 1000px) {
+    .table__responsive {
+      overflow-x: auto;
+    }
+  }/*# sourceMappingURL=style.css.map */
+  @keyframes loader {
+    0%{
+      opacity: 1;
+    }
+    50%{
+      opacity: 1;
+    }
+    60%{
+      opacity: 1;
+    }
+    70%{
+      opacity: 0.4;
+    }
+    80%{
+      opacity: 0.3;
+    }
+    90%{
+      opacity: 0.2;
+    }
+    95%{
+      opacity: 0.1;
+    }
+    100%{
+      opacity: 0;
+    }
+  }
